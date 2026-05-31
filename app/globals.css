@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+/* =========================================================
+   Ylex Media — Interactive Blueprint / Animated Wireframe
+   Tailwind v4 + small amount of CSS for masks & performance.
+   ========================================================= */
+
+:root {
+  --mx: 50%;
+  --my: 50%;
+  --gridA: rgba(214, 228, 255, 0.06);
+  --gridB: rgba(214, 228, 255, 0.10);
+  --neon: rgba(106, 228, 255, 0.38);
+  --warn: rgba(255, 106, 139, 0.45);
+}
+
+html,
+body {
+  height: 100%;
+  background: #050a14;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(106, 228, 255, 0.22);
+}
+
+/* Blueprint UI prefers crisp edges. */
+svg,
+canvas {
+  shape-rendering: geometricPrecision;
+}
+
+/* Smooth scrolling (respects user setting via JS as well). */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Cursor is a real UI element here. Hide default on fine pointers only. */
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+}
+
+/* Assist low-end devices: ensure huge layers don't trigger extra paint. */
+.will-transform {
+  will-change: transform;
+}
+.will-opacity {
+  will-change: opacity;
+}
+
+/* Radial light mask used by the grid overlay. */
+.blueprint-light-mask {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(450px 450px at var(--mx) var(--my), var(--neon), transparent 60%),
+    radial-gradient(900px 900px at var(--mx) var(--my), rgba(214, 228, 255, 0.12), transparent 72%);
+  mix-blend-mode: screen;
+  opacity: 0.85;
+  filter: saturate(115%);
+}
+
+/* The noise texture prevents banding in dark gradients. */
+.noise {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("/assets/blueprint-noise.png");
+  opacity: 0.08;
+  mix-blend-mode: overlay;
+}
+
+/* A thin scanline to keep the UI feeling "alive" even when idle. */
+.scanline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(214, 228, 255, 0.10), transparent);
+  opacity: 0.6;
+  animation: scan 4.4s linear infinite;
+  pointer-events: none;
+}
+
+/* Minor typography utilities */
+.kicker {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  opacity: 0.78;
+}
