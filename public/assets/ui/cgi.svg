@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="300" viewBox="0 0 480 300">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7CFF00" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FF2D8B" stop-opacity="0.10"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="rgba(11,16,32,0.08)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="480" height="300" rx="18" fill="rgba(255,255,255,0.92)"/>
+  <rect x="0" y="0" width="480" height="300" rx="18" fill="url(#grid)" opacity="0.55"/>
+  <rect x="0" y="0" width="480" height="300" rx="18" fill="url(#g)"/>
+  <rect x="10" y="10" width="460" height="280" rx="14" fill="rgba(247,251,255,0.88)" stroke="rgba(11,16,32,0.16)" stroke-width="2"/>
+  <rect x="10" y="10" width="460" height="36" rx="14" fill="rgba(11,16,32,0.04)"/>
+  <circle cx="32" cy="28" r="6" fill="rgba(255,45,139,0.65)"/>
+  <circle cx="52" cy="28" r="6" fill="rgba(0,210,255,0.65)"/>
+  <circle cx="72" cy="28" r="6" fill="rgba(124,255,0,0.55)"/>
+  <text x="240.0" y="32" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace" font-size="12" letter-spacing="2" fill="rgba(11,16,32,0.62)">CGI • WIREFRAME</text>
+  <g transform="translate(22,56)">
+    
+  <text x="10" y="18" font-family="ui-monospace, SFMono-Regular, Menlo" font-size="10" fill="rgba(11,16,32,0.55)" letter-spacing="2">3D_VIEWPORT</text>
+  <rect x="0" y="30" width="310" height="182" rx="12" fill="rgba(11,16,32,0.03)" stroke="rgba(11,16,32,0.14)" stroke-width="1.5"/>
+  <path d="M70 92l70-40 100 38-70 40z" fill="none" stroke="rgba(11,16,32,0.18)" stroke-width="2"/>
+  <path d="M70 92v70l100 38v-70" fill="none" stroke="rgba(11,16,32,0.14)" stroke-width="2"/>
+  <path d="M240 90v70l-70 40v-70" fill="none" stroke="rgba(11,16,32,0.14)" stroke-width="2"/>
+  <path d="M60 170h70" stroke="rgba(255,45,139,0.55)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M60 170v-60" stroke="rgba(0,210,255,0.55)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M60 170l50 30" stroke="rgba(124,255,0,0.45)" stroke-width="3" stroke-linecap="round"/>
+  <rect x="326" y="30" width="88" height="182" rx="12" fill="rgba(11,16,32,0.03)" stroke="rgba(11,16,32,0.14)" stroke-width="1.5"/>
+  <text x="336" y="52" font-family="ui-monospace, SFMono-Regular, Menlo" font-size="10" fill="rgba(11,16,32,0.55)" letter-spacing="2">PARAMS</text>
+  <rect x="336" y="68" width="68" height="10" rx="5" fill="rgba(11,16,32,0.06)"/><rect x="336" y="86" width="68" height="10" rx="5" fill="rgba(11,16,32,0.06)"/><rect x="336" y="104" width="68" height="10" rx="5" fill="rgba(11,16,32,0.06)"/><rect x="336" y="122" width="68" height="10" rx="5" fill="rgba(11,16,32,0.06)"/><rect x="336" y="140" width="68" height="10" rx="5" fill="rgba(11,16,32,0.06)"/><rect x="336" y="158" width="68" height="10" rx="5" fill="rgba(11,16,32,0.06)"/>
+  <rect x="336" y="86" width="68" height="10" rx="5" fill="rgba(0,210,255,0.14)"/>
+
+  </g>
+  <path d="M16 70h448" stroke="rgba(11,16,32,0.10)" stroke-width="1"/>
+  <path d="M16 282h448" stroke="rgba(0,210,255,0.22)" stroke-width="2"/>
+</svg>

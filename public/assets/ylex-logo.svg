@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+  <rect width="96" height="96" rx="22" fill="#FFFFFF" fill-opacity="0.70"/>
+  <path d="M18 18h60v60H18z" fill="none" stroke="rgba(11,16,32,0.20)" stroke-width="2"/>
+  <!-- Wire Y -->
+  <path d="M26 30l22 26 22-26" fill="none" stroke="#00D2FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M48 56v18" fill="none" stroke="#FF2D8B" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="48" cy="56" r="3.2" fill="#0B1020"/>
+  <!-- Corner ticks -->
+  <path d="M18 30v-12h12" fill="none" stroke="rgba(11,16,32,0.18)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M78 30v-12H66" fill="none" stroke="rgba(11,16,32,0.18)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M18 66v12h12" fill="none" stroke="rgba(11,16,32,0.18)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M78 66v12H66" fill="none" stroke="rgba(11,16,32,0.18)" stroke-width="2" stroke-linecap="round"/>
+</svg>
