@@ -1,7 +1,0 @@
-{
-  "framework": "vite",
-  "installCommand": "corepack enable && pnpm install --no-frozen-lockfile",
-  "buildCommand": "pnpm build",
-  "devCommand": "pnpm dev",
-  "outputDirectory": "dist"
-}
